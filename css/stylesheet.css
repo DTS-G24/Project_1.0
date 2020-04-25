@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding:0;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin:0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 130px 0;
+  background-color:#121627;
+  color: white;
+  text-align: left;
+  position:relative;
+  margin:auto;
+}
+
+.top-wrapper:after {
+  content: '';
+  position: absolute;
+  border-top: 100px solid #121627;
+  border-left: 100vw solid transparent;
+  bottom: -100px;
+}
+
+.top-wrapper img{
+  display: inline-block;
+  float: right;
+  width:450px;
+  height:auto;
+}
+
+.top-wrapper span {
+  display: inline-block;
+  font-size: 45px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper p {
+  display: inline-block;
+  margin-bottom: 3px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color:#ff68cd;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(18, 22, 39, 0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  max-width: 45px;
+  height: auto !important;
+  margin-top: 10px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color:#ff68cd;;
+}
+
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+}
