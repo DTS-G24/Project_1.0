@@ -76,12 +76,38 @@
   }
   /*end of responsive content technologies*/
   
+  /*styling untuk team*/
    .teams {
     flex-wrap: wrap;
+    margin: auto 0;
   }
+  
   .team {
     width: 50%;
+    margin-bottom: 50px;
   }
+
+ .team-heading {
+  line-height: 30px;
+  }
+  
+  .team h2 {
+  line-height: 30px;
+   }
+
+  .role {
+  padding-top: 5px;
+  }
+  
+  .team-sosmed {
+   padding-top: 15px;
+  }
+  
+  .team-desc p {
+    padding-top: 15px;
+  }
+  /*styling untuk team end*/
+
 }
 
 /* Untuk Smartphone */
@@ -165,13 +191,33 @@ header{
 
   /*end of responsive content technologies*/
   
+/*styling untuk team*/
    .teams {
     flex-direction: column;
   }
   
   .team {
     margin: 0 auto;
-	}
+    width: 100%;
+  }
+  
+  .team h2 {
+  line-height: 10px;
+   }
+
+  .role {
+  padding-top: 5px;
+  }
+  
+  .team-sosmed {
+   padding-top: 10px;
+   font-size: 20px;
+  }
+  
+  .team-desc p {
+    padding-top: 10px;
+  }
+  /*styling untuk team end*/
 	
  /*Start Styling Service*/
   .column {
