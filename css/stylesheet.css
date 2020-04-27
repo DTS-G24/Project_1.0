@@ -161,6 +161,7 @@ header {
   padding-bottom: 50px;
   text-align: center;
   background-color: #CBE1FE;
+  overflow: hidden;
 }
 
 .card h3{
