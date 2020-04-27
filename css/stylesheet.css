@@ -182,6 +182,7 @@ header {
 .tech-wrapper {
   background: #fff;
   position: relative;
+  margin-top: 100px;
   margin-bottom: 100px;
   animation: fadeUp 4s;
   animation-delay: .5s;
