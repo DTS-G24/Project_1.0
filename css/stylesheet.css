@@ -113,7 +113,6 @@ header nav ul li a.active{
 	flex: 1;
 	display: flex;
 	justify-content: center;
-	height: 60vh;
   margin-top: 90px;
 }
 .intro-image img {
