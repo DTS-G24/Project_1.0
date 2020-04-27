@@ -1,80 +1,12 @@
 /* Untuk Tablet */
 @media all and (max-width: 1000px) {
-  /*start header*/
-  header{
-    padding: 0 20px;
-  }
-  .content-header {
-		flex-direction: column;
-	}
-	.introduction {
-		margin-top: 85px;
-		text-align: center;
-	}
-	.intro-text h1 {
-		font-size: 36px;
-	}
-	.intro-text p {
-		font-size: 20px;
-	}
-	.intro-image img {
-		height: 80%;
-    width: 100%;
-	}
-  .intro-image{
-    margin-top : 0;
-  }
-  .content-header {
-  	min-height: 90vh;
-  }
-  /*end header*/
-  
-  /*start sevices*/
-  .column {
-    width: 40%;
-    margin-bottom: 30px;
-    position: relative;
-    left: 10%; /* or right 50% */
+  .top-wrapper span {
+    font-size: 32px;
   }
 
-  .heading h1{
-    text-align: center;
-    font-size: 25px;
+  .heading h2 {
+    font-size: 20px;
   }
-
-  .heading p{
-    text-align: center;
-    font-size: 13px;
-    margin-top: -20px;
-    margin-bottom: 50px;
-  }
-
-  .card p{
-    font-size: 13px;
-  }
-    .card {
-    height: 390px;
-  }
-  /*end services*/
-  
-  /*responsive content technologies*/
-  .col{
-    width: 50%;
-  }
-
-  .col h2{
-    font-size: 2vw;
-  }
-  .tech-card .tech-logo {
-    width: 50px;
-    height: 50px;
-    top: -25px;
-  }
-	
-  .tech-card {
-    height: 130px;
-  }
-  /*end of responsive content technologies*/
   
    .teams {
     flex-wrap: wrap;
@@ -82,102 +14,47 @@
   .team {
     width: 50%;
   }
-
-  .team h2 {
-    font-size: 15px;
-    text-align: center;
-  }
-
-  .team p {
-    font-size: 13px;
-  }
-
-  .team-desc p {
-    font-size: 12px;
-  }
 }
 
 /* Untuk Smartphone */
 @media all and (max-width: 670px) {
-/*start header*/
-  header{
-    padding: 0 20px;
+
+  .btn {
+    width: 100%;
   }
-  .menu-toggle{
+
+  .facebook {
+    margin-bottom: 10px;
+  }
+
+  .top-wrapper {
+    text-align: center;
+  }
+  .top-wrapper:after {
+    content: '';
+    position: absolute;
+    border-top: 100px solid #121627;
+    border-left: 100vw solid transparent;
+    bottom: -100px;
+  }
+
+  .header-right{
+    display:none;
+  }
+
+  .menu-icon{
     display:block;
   }
-  header nav{
-    position: absolute;
-    width: 100%;
-    height: calc(100vh - 50px);
-    background:#121627;
-    top: 50px;
-    left: -100%;
-    transition: 0.5s;
-  }
-  header nav.active{
-    left: 0;
-  }
-  header nav ul{
-     display:block;
-     text-align: center;
-  }
-  header nav ul{
-     display:block;
-     text-align: center;
-  }
-  header nav ul li a{
-     border-bottom: 1px solid rgba(0,0,0,.2)
-  }
-  .introduction {
-    margin-top: 80px;
-    text-align: center;
-  }
-  .intro-image img {
-    height: 70%;
-  }
-  .intro-text h1 {
-    font-size: 36px;
-  }
-  .intro-text p {
-    font-size: 16px;
-  }
-  .content-header {
-  	min-height: 90vh;
-  }
-/*end header*/	
-	
-  /*responsive content technologies*/
-  .col {
-    width: 100%;
-    text-align: center;
+
+  .top-wrapper span {
+    font-size: 24px;
+    line-height: 20px;
   }
 
-  .tech-card {
-    padding-top: 30px;
-    height: auto; 
+  .top-wrapper p {
+    font-size: 12px;
+    line-height: 20px;
   }
-
-  .col h2 {
-    font-size: 23px;
-  }
-
-  .col p {
-    font-size: 14px;
-  }
-
-  .tech-card .tech-logo {
-    width: 50px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    top: -25px;
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
-
-  /*end of responsive content technologies*/
   
    .teams {
     flex-direction: column;
@@ -185,11 +62,41 @@
   
   .team {
     margin: 0 auto;
-	}
+}
 
 
-	
- /*Start Styling Service*/
+
+ /* Awal Styling Service*/
+
+  /* Responsive columns */
+  @media screen and (max-width: 1000px) {
+    .column {
+      width: 40%;
+      margin-bottom: 30px;
+      position: relative;
+      left: 50px; /* or right 50% */
+    }
+
+    .heading h1{
+        text-align: center;
+        font-size: 25px;
+    }
+  
+    .heading p{
+        text-align: center;
+        font-size: 13px;
+        margin-top: -20px;
+        margin-bottom: 50px;
+    }
+
+    .card p{
+      font-size: 13px;
+  }
+
+  }
+  
+/* Responsive columns */
+@media screen and (max-width: 600px) {
   .column {
     width: 80%;
     display: block;
@@ -200,21 +107,21 @@
   }
 
   .heading h1{
-    text-align: center;
-    font-size: 23px;
+      text-align: center;
+      font-size: 23px;
 
   }
 
   .heading p{
-    text-align: center;
-    font-size: 13px;
-    margin-top: -20px;
-    margin-bottom: 50px;
+      text-align: center;
+      font-size: 13px;
+      margin-top: -20px;
+      margin-bottom: 50px;
   }
 
   .card p{
     font-size: 13px;
-  }
- /*End Styling Service*/
+}
 
 }
+ /* Akhir Styling Service*/
