@@ -49,3 +49,65 @@
     line-height: 20px;
   }
 }
+
+
+
+ /* Awal Styling Service*/
+
+  /* Responsive columns */
+  @media screen and (max-width: 1000px) {
+    .column {
+      width: 40%;
+      margin-bottom: 30px;
+      position: relative;
+      left: 50px; /* or right 50% */
+    }
+
+    .heading h1{
+        text-align: center;
+        font-size: 25px;
+    }
+  
+    .heading p{
+        text-align: center;
+        font-size: 13px;
+        margin-top: -20px;
+        margin-bottom: 50px;
+    }
+
+    .card p{
+      font-size: 13px;
+  }
+
+  }
+  
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 80%;
+    display: block;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    position: relative;
+    left: 0; /* or right 50% */
+  }
+
+  .heading h1{
+      text-align: center;
+      font-size: 23px;
+
+  }
+
+  .heading p{
+      text-align: center;
+      font-size: 13px;
+      margin-top: -20px;
+      margin-bottom: 50px;
+  }
+
+  .card p{
+    font-size: 13px;
+}
+
+}
+ /* Akhir Styling Service*/
