@@ -71,7 +71,7 @@
   }
 	
   .tech-card {
-    height: 200px;
+    height: 130px;
   }
   /*end of responsive content technologies*/
   
@@ -181,6 +181,7 @@ header{
 
   .tech-card {
     padding-top: 30px;
+    height: auto;
   }
 
   .col h2 {
@@ -253,8 +254,10 @@ header{
       font-size: 13px;
       margin-top: -20px;
       margin-bottom: 50px;
-  }
-
+  } 
+	
+  .card {height: auto;}
+	
   .card p{
     font-size: 13px;
 }
