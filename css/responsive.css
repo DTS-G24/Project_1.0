@@ -8,6 +8,16 @@
     font-size: 20px;
   }
   
+  /*responsive content technologies*/
+  .col{
+    width: 50%;
+  }
+
+  .col h2{
+    font-size: 2vw;
+  }
+  /*end of responsive content technologies*/
+  
    .teams {
     flex-wrap: wrap;
   }
@@ -55,6 +65,37 @@
     font-size: 12px;
     line-height: 20px;
   }
+  
+  /*responsive content technologies*/
+
+  .col {
+    width: 100%;
+    text-align: center;
+  }
+
+  .tech-card {
+    padding-top: 30px;
+  }
+
+  .col h2 {
+    font-size: 23px;
+  }
+
+  .col p {
+    font-size: 14px;
+  }
+
+  .tech-card .tech-logo {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  /*end of responsive content technologies*/
   
    .teams {
     flex-direction: column;
@@ -125,3 +166,11 @@
 
 }
  /* Akhir Styling Service*/
+/*responsive content technologies*/
+ @media screen and (max-width: 1100px) {
+  .tech-card .tech-logo {
+    width: 50px;
+    height: 50px;
+  }
+ }
+/*responsive content technologies*/
