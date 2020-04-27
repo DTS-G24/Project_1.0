@@ -177,3 +177,85 @@ header {
   text-align: justify;
 }
 /* Akhir Styling Service*/
+
+/* awal styling team*/
+.team-wrapper {
+  background-color: #F2F8FF;
+  padding: 120px 0 130px 0;
+}
+
+.team-heading {
+  text-align: center;
+  line-height: 3px;
+}
+
+.team-heading h2 {
+  font-size: 30px;
+}
+
+.team-heading p {
+  font-size: 20px;  
+}
+
+.teams {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team {
+  text-align: center;
+  padding: 20px;
+  flex: auto;
+  width: 20%;
+}
+
+.team h2 {
+  font-size: 15px;
+  text-align: center;
+  line-height: 3px;
+}
+
+
+
+.role {
+  line-height: 3px;
+}
+
+.team p {
+  font-size: 15px;
+}
+
+.team-desc p {
+  font-size: 12px;
+}
+
+.team-foto {
+  width: 169px;
+  height: 169px;
+  border-radius: 50%;
+}
+
+.twitter {
+  color: #34b7eb;
+  width: 40px;
+  height: 40px;
+}
+
+.github {
+  color: black;
+}
+
+.phone {
+  color: #eb3471;
+}
+
+.team-sosmed {
+  font-size: 30px;
+  line-height: 2px  
+}
+
+.team-sosmed a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color:#ff68cd;;
+}
+/* akhir styling team*/
