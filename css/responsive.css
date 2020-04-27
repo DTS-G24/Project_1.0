@@ -1,12 +1,57 @@
 /* Untuk Tablet */
 @media all and (max-width: 1000px) {
-  .top-wrapper span {
-    font-size: 32px;
+  /*start header*/
+  header{
+    padding: 0 20px;
   }
+  .content-header {
+		flex-direction: column;
+	}
+	.introduction {
+		margin-top: 85px;
+		text-align: center;
+	}
+	.intro-text h1 {
+		font-size: 36px;
+	}
+	.intro-text p {
+		font-size: 20px;
+	}
+	.intro-image img {
+		height: 80%;
+	}
+  .intro-image{
+    margin-top : 0;
+  }
+  .content-header {
+  	min-height: 90vh;
+  }
+  /*end header*/
+  
+  /*start sevices*/
+    .column {
+      width: 40%;
+      margin-bottom: 30px;
+      position: relative;
+      left: 50px; /* or right 50% */
+    }
 
-  .heading h2 {
-    font-size: 20px;
+    .heading h1{
+        text-align: center;
+        font-size: 25px;
+    }
+  
+    .heading p{
+        text-align: center;
+        font-size: 13px;
+        margin-top: -20px;
+        margin-bottom: 50px;
+    }
+
+    .card p{
+      font-size: 13px;
   }
+  /*end services*/
   
   /*responsive content technologies*/
   .col{
@@ -15,6 +60,10 @@
 
   .col h2{
     font-size: 2vw;
+  }
+  .tech-card .tech-logo {
+    width: 50px;
+    height: 50px;
   }
   /*end of responsive content technologies*/
   
@@ -28,46 +77,55 @@
 
 /* Untuk Smartphone */
 @media all and (max-width: 670px) {
-
-  .btn {
-    width: 100%;
+/*start header*/
+header{
+    padding: 0 20px;
   }
-
-  .facebook {
-    margin-bottom: 10px;
-  }
-
-  .top-wrapper {
-    text-align: center;
-  }
-  .top-wrapper:after {
-    content: '';
-    position: absolute;
-    border-top: 100px solid #121627;
-    border-left: 100vw solid transparent;
-    bottom: -100px;
-  }
-
-  .header-right{
-    display:none;
-  }
-
-  .menu-icon{
+  .menu-toggle{
     display:block;
   }
-
-  .top-wrapper span {
-    font-size: 24px;
-    line-height: 20px;
+  header nav{
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background:#121627;
+    top: 50px;
+    left: -100%;
+    transition: 0.5s;
   }
-
-  .top-wrapper p {
-    font-size: 12px;
-    line-height: 20px;
+  header nav.active{
+    left: 0;
   }
-  
+  header nav ul{
+     display:block;
+     text-align: center;
+  }
+  header nav ul{
+     display:block;
+     text-align: center;
+  }
+  header nav ul li a{
+     border-bottom: 1px solid rgba(0,0,0,.2)
+  }
+  .introduction {
+    margin-top: 80px;
+    text-align: center;
+  }
+  .intro-image img {
+    height: 70%;
+  }
+  .intro-text h1 {
+    font-size: 36px;
+  }
+  .intro-text p {
+    font-size: 16px;
+  }
+  .content-header {
+  	min-height: 90vh;
+  }
+/*end header*/	
+	
   /*responsive content technologies*/
-
   .col {
     width: 100%;
     text-align: center;
@@ -103,41 +161,9 @@
   
   .team {
     margin: 0 auto;
-}
-
-
-
- /* Awal Styling Service*/
-
-  /* Responsive columns */
-  @media screen and (max-width: 1000px) {
-    .column {
-      width: 40%;
-      margin-bottom: 30px;
-      position: relative;
-      left: 50px; /* or right 50% */
-    }
-
-    .heading h1{
-        text-align: center;
-        font-size: 25px;
-    }
-  
-    .heading p{
-        text-align: center;
-        font-size: 13px;
-        margin-top: -20px;
-        margin-bottom: 50px;
-    }
-
-    .card p{
-      font-size: 13px;
-  }
-
-  }
-  
-/* Responsive columns */
-@media screen and (max-width: 600px) {
+	}
+	
+ /*Start Styling Service*/
   .column {
     width: 80%;
     display: block;
@@ -163,14 +189,6 @@
   .card p{
     font-size: 13px;
 }
+ /*End Styling Service*/
 
 }
- /* Akhir Styling Service*/
-/*responsive content technologies*/
- @media screen and (max-width: 1100px) {
-  .tech-card .tech-logo {
-    width: 50px;
-    height: 50px;
-  }
- }
-/*responsive content technologies*/
