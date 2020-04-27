@@ -8,113 +8,132 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-a {
-  text-decoration: none;
-}
-
-.clear {
-  clear: left;
-}
-
-.container {
-  max-width: 1170px;
+/*start header*/
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
+  background-color: rgba(18, 22, 39, 0.9);
   width: 100%;
-  padding: 0 15px;
-  margin:0 auto;
+  box-sizing: border-box;
+  z-index: 10;
+}
+header .logo{
+  max-width: 45px;
+  height: auto !important;
+  margin-top: 8px;
 }
 
-.top-wrapper {
-  padding: 180px 0 130px 0;
-  background-color:#121627;
-  color: white;
-  text-align: left;
-  position:relative;
-  margin:auto;
-}
-
-.top-wrapper:after {
-  content: '';
-  position: absolute;
-  border-top: 100px solid #121627;
-  border-left: 100vw solid transparent;
-  bottom: -100px;
-}
-
-.top-wrapper img{
-  display: inline-block;
+header nav{
   float: right;
-  width:450px;
-  height:auto;
+}
+header nav ul{
+  margin: 0;
+  padding: 0;
+  display:flex;
 }
 
-.top-wrapper span {
-  display: inline-block;
-  font-size: 45px;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
+header nav ul li{
+  list-style: none;
 }
 
-.top-wrapper p {
-  display: inline-block;
-  margin-bottom: 3px;
-  font-size: 18px;
-  letter-spacing: 2px;
+header nav ul li a{
+  height:60px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active{
+  background-color: rgba(255, 255, 255, 0.3);
   color:#ff68cd;
 }
 
-.fa {
-  margin-right: 5px;
-}
-
-header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(18, 22, 39, 0.9);
-  position :fixed;
-  top: 0;
-  z-index: 10;
-}
-
-.logo {
-  max-width: 45px;
-  height: auto !important;
-  margin-top: 10px;
-}
-
-.header-left {
-  float: left;
-}
-
-.header-right {
+.menu-toggle{
+  color: #fff;
   float: right;
-  margin-right: -25px;
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-}
-
-.header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  color:#ff68cd;;
-}
-
-.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
   display: none;
 }
 
+.wrapper-skew{
+    width: 100%;
+    position: relative;
+  }
+
+#skew{
+    background-color:#121627;
+    z-index: 1;
+}
+
+.wrapper-skew::after{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  z-index:-1;
+  bottom:0;
+  content: '';
+}
+
+#skew::after{
+  transform-origin: left bottom;
+  transform: skewY(3deg);
+}
+
+.content-header {
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+	min-height: 80vh;
+	align-items: center;
+}
+.introduction {
+	flex: 1;
+  margin-top: 90px;
+}
+.intro-text h1 {
+	font-size: 44px;
+	font-weight: 500;
+	color: #fff;
+}
+.intro-text p {
+	margin-top: 5px;
+	font-size: 18px;
+	color:#ff68cd;;
+}
+
+.intro-image {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+  margin-top: 90px;
+}
+.intro-image img {
+	filter: drop-shadow(0px 5px 3px black);
+	animation: drop 1.5s ease;
+}
+
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+/*end header*/
+
 /* Awal Styling Service*/
 .service-wrapper {
-  font-family: 'Poppins', sans-serif;
   background-color: #F2F8FF;
   padding-top: 150px;
   padding-bottom: 150px;
@@ -142,8 +161,6 @@ header {
   left: 10%; /* or right 50% */
 }
 
-.row {margin: 0 -5px;}
-
 .row:after {
   content: "";
   display: table;
@@ -161,6 +178,7 @@ header {
   padding-bottom: 50px;
   text-align: center;
   background-color: #CBE1FE;
+  overflow: hidden;
 }
 
 .card h3{
@@ -182,6 +200,7 @@ header {
 .tech-wrapper {
   background: #fff;
   position: relative;
+  margin-top: 100px;
   margin-bottom: 100px;
   animation: fadeUp 4s;
   animation-delay: .5s;
@@ -223,6 +242,7 @@ header {
   padding-bottom: 20px;
   border-radius: 5px;
   margin-bottom: 20px;
+  min-height: 120px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -249,11 +269,12 @@ header {
   border-radius: 50px;
   border: 2px solid white;
   position: absolute;
-  top: -25px;
+  top: -35px;
   right: 10px;
   overflow:hidden;
   background: #fff;
   transition: .5s;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.2);
 }
 /*end style techno*/
 
@@ -261,6 +282,13 @@ header {
 .team-wrapper {
   background-color: #F2F8FF;
   padding: 120px 0 130px 0;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin:0 auto;
 }
 
 .team-heading {
@@ -291,7 +319,6 @@ header {
 .team h2 {
   font-size: 15px;
   text-align: center;
-  line-height: 3px;
 }
 
 
