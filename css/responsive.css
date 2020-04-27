@@ -18,8 +18,8 @@
 		font-size: 20px;
 	}
 	.intro-image img {
-    		width: 100%;
-		height: auto;
+		height: 80%;
+    width: 100%;
 	}
   .intro-image{
     margin-top : 0;
@@ -30,30 +30,30 @@
   /*end header*/
   
   /*start sevices*/
-    .column {
-      width: 40%;
-      margin-bottom: 30px;
-      position: relative;
-      left: 10%; /* or right 50% */
-    }
+  .column {
+    width: 40%;
+    margin-bottom: 30px;
+    position: relative;
+    left: 10%; /* or right 50% */
+  }
 
-    .heading h1{
-        text-align: center;
-        font-size: 25px;
-    }
-  
-    .heading p{
-        text-align: center;
-        font-size: 13px;
-        margin-top: -20px;
-        margin-bottom: 50px;
-    }
+  .heading h1{
+    text-align: center;
+    font-size: 25px;
+  }
 
-    .card p{
-      font-size: 13px;
+  .heading p{
+    text-align: center;
+    font-size: 13px;
+    margin-top: -20px;
+    margin-bottom: 50px;
+  }
+
+  .card p{
+    font-size: 13px;
   }
     .card {
-      height: 390px;
+    height: 390px;
   }
   /*end services*/
   
@@ -76,21 +76,16 @@
   }
   /*end of responsive content technologies*/
   
-  /*styling untuk team*/
    .teams {
     flex-wrap: wrap;
-    margin: auto 0;
   }
-  
   .team {
     width: 50%;
-    margin-bottom: 50px;
   }
-	
-  
 
   .team h2 {
     font-size: 15px;
+    text-align: center;
   }
 
   .team p {
@@ -100,34 +95,12 @@
   .team-desc p {
     font-size: 12px;
   }
-
- .team-heading {
-  line-height: 30px;
-  }
-  
-  .team h2 {
-  line-height: 30px;
-   }
-
-  .role {
-  padding-top: 5px;
-  }
-  
-  .team-sosmed {
-   padding-top: 15px;
-  }
-  
-  .team-desc p {
-    padding-top: 15px;
-  }
-  /*styling untuk team end*/
-
 }
 
 /* Untuk Smartphone */
 @media all and (max-width: 670px) {
 /*start header*/
-header{
+  header{
     padding: 0 20px;
   }
   .menu-toggle{
@@ -182,7 +155,7 @@ header{
 
   .tech-card {
     padding-top: 30px;
-    height: auto;
+    height: auto; 
   }
 
   .col h2 {
@@ -206,33 +179,15 @@ header{
 
   /*end of responsive content technologies*/
   
-/*styling untuk team*/
    .teams {
     flex-direction: column;
   }
   
   .team {
     margin: 0 auto;
-    width: 100%;
-  }
-  
-  .team h2 {
-  line-height: 10px;
-   }
+	}
 
-  .role {
-  padding-top: 5px;
-  }
-  
-  .team-sosmed {
-   padding-top: 10px;
-   font-size: 20px;
-  }
-  
-  .team-desc p {
-    padding-top: 10px;
-  }
-  /*styling untuk team end*/
+
 	
  /*Start Styling Service*/
   .column {
@@ -245,23 +200,21 @@ header{
   }
 
   .heading h1{
-      text-align: center;
-      font-size: 23px;
+    text-align: center;
+    font-size: 23px;
 
   }
 
   .heading p{
-      text-align: center;
-      font-size: 13px;
-      margin-top: -20px;
-      margin-bottom: 50px;
-  } 
-	
-  .card {height: auto;}
-	
+    text-align: center;
+    font-size: 13px;
+    margin-top: -20px;
+    margin-bottom: 50px;
+  }
+
   .card p{
     font-size: 13px;
-}
+  }
  /*End Styling Service*/
 
 }
