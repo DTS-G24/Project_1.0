@@ -246,6 +246,7 @@ header nav ul li a.active{
   padding-bottom: 20px;
   border-radius: 5px;
   margin-bottom: 20px;
+  min-height: 120px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -272,7 +273,7 @@ header nav ul li a.active{
   border-radius: 50px;
   border: 2px solid white;
   position: absolute;
-  top: -25px;
+  top: -35px;
   right: 10px;
   overflow:hidden;
   background: #fff;
