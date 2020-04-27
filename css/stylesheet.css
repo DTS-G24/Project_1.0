@@ -163,8 +163,6 @@ header nav ul li a.active{
   left: 10%; /* or right 50% */
 }
 
-.row {margin: 0 -5px;}
-
 .row:after {
   content: "";
   display: table;
