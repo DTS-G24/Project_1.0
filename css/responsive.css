@@ -64,6 +64,7 @@
   .tech-card .tech-logo {
     width: 50px;
     height: 50px;
+    top: -25px;
   }
   /*end of responsive content technologies*/
   
@@ -148,6 +149,7 @@ header{
     height: 50px;
     margin-left: auto;
     margin-right: auto;
+    top: -25px;
     left: 0;
     right: 0;
     text-align: center;
