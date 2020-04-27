@@ -19,10 +19,10 @@
 	}
 	.intro-image img {
 		height: 80%;
+    		width: 100%
 	}
   .intro-image{
     margin-top : 0;
-    width: 100%
   }
   .content-header {
   	min-height: 90vh;
@@ -85,6 +85,20 @@
   .team {
     width: 50%;
     margin-bottom: 50px;
+  }
+	
+  
+
+  .team h2 {
+    font-size: 15px;
+  }
+
+  .team p {
+    font-size: 13px;
+  }
+
+  .team-desc p {
+    font-size: 12px;
   }
 
  .team-heading {
